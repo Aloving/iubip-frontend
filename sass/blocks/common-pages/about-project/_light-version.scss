@@ -1,0 +1,104 @@
+body.lightVersion{
+
+	.about-block{
+
+		&__image-block{
+			img{
+				@include grayscale();
+			}
+		}
+
+		&__text-block{
+			p{
+				font-weight: 400;
+			}
+		}
+
+	}
+
+	.about-advantages-wrapper{
+		&:after,
+		&:before{
+			display: none;
+		}
+	}
+
+	.about-advantages{
+		padding: 7px 0 118px;
+		background: #fff;
+
+		&:after,
+		&:before{
+			display: none;
+		}
+	}
+
+	.about-advantage{
+
+		&__title p{
+			font-weight: 400;
+		}
+
+		&__image-block{
+			img{
+				@include grayscale();
+			}
+		}
+
+		&__text-block{
+			width: 198px;
+		}
+
+		&__description{
+			font-weight: 400;
+		}
+
+	}
+
+	.about-gallery-block{
+		padding: 21px 0px 206px;
+		margin-top: 0px;
+
+		.page-block-header{
+			padding: 36px 0px 13px;
+		}
+
+		&:after{
+			display: none;
+		}
+
+	}
+
+	.about-gallery{
+
+		.owl-dots{
+			padding-top: 8px;
+		}
+
+		.owl-dot{
+			width: 20px;
+			height: 20px;
+
+		}
+	
+		.owl-prev{
+			transform: rotate(180deg);
+		}
+
+		.owl-prev{
+			left: -90px;
+		}
+
+		.owl-next{
+			right: -90px;
+		}
+
+	}
+
+	.about-gallery-slide{
+		img{
+			@include grayscale();
+		}
+	}
+
+}

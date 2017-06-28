@@ -1,0 +1,453 @@
+body.light-25{
+
+  .about-block{
+    &__text-block{
+      p{
+        font-size: 16+2px;
+      }
+    }
+
+  }
+
+  .direction-item{
+    padding: 0;
+    &__link{
+      padding: 0;
+    }
+  }
+
+  .about-counters{
+    p{
+      font-size: 18+2px;
+    }
+  }
+
+  .page-block-header{
+    h2{
+      font-size: 40+2px;
+    }
+  }
+
+  .page-title-block{
+    h1{
+      font-size: 40+2px;
+    }
+  }
+
+  .way-item{
+    &__title{
+      font-size: 20+2px;
+    }
+  }
+
+  .phones{
+
+    &__phone-number{
+      font-size: 24+2px;
+    }
+
+    &__label-phone{
+      font-size: 24+2px;
+    }
+
+  }
+
+  .index-menu,
+  .common-nav{
+
+    &__item{
+      a{
+        font-size: 20+2px;
+      }
+    }
+
+  }
+
+  .light-version{
+    font-size: 18+2px;
+  }
+
+  .header{
+    &__login-btn{
+      width: 114px;
+      font-size: 18+2px;
+    }
+
+    &__middle-block{
+      padding: 0px 46px 0px 88px;
+    }
+  }
+
+  .common-header{
+    &__middle-block{
+      @extend .header__middle-block;
+    }
+  }
+
+  .light-slider{
+
+    .page-block-header{
+
+      h2{
+        font-size: 40+2px;
+      }
+
+    }
+
+    &__all-link{
+      font-size: 24+2px;
+    }
+
+  }
+
+  .light-slide{
+
+    &__link{
+      font-size: 18+2px;
+    }
+
+    &__text-block{
+      max-height: 228px;
+    }
+
+    &__title{
+      p{
+        font-size: 24+2px;
+      }
+
+    }
+
+    &__description{
+      p{
+        font-size: 16+2px;
+      }
+
+    }
+
+  }
+
+  .our-ways{
+
+    &__light-all{
+      font-size: 24+2px;
+    }
+
+    .block-header{
+      font-size: 40+2px;
+    }
+
+  }
+
+  .footer-nav{
+
+    &__link{
+      font-size: 16+2px;
+    }
+
+  }
+
+  .footer-callbacks{
+
+    &__phone{
+      font-size: 24+2px;
+    }
+
+    &__submit-button{
+      font-size: 18+2px;
+    }
+
+  }
+
+  .socials{
+    &__copyright{
+      font-size: 16+2px;
+    }
+  }
+
+  .direction-item{
+    &__title{
+      font-size: 24+2px;
+    }
+  }
+
+  .document-search-item{
+    &__header a{
+      font-size: 24+2px;
+    }
+
+    &__description{
+      font-size: 16+2px;
+    }
+
+  }
+
+  .documents-list{
+    padding-bottom: 100+2px;
+    margin-bottom: 0+2px;
+  }
+
+  .search-item{
+    &__header a{
+      font-size: 24+2px;
+    }
+
+    &__description{
+      font-size: 16+2px;
+    }
+
+  }
+
+
+
+  .faq-item{
+    &__description{
+      font-size: 16+2px;
+    }
+  }
+
+  .about-advantage{
+    &__title p{
+      font-size: 24+2px;
+    }
+
+    &__description p{
+      font-size: 16+2px;
+    }
+
+  }
+
+  .teacher{
+
+    &__name{
+      font-size: 20+2px;
+    }
+
+    &__degrees,
+    &__positions{
+      font-size: 16+2px;
+    }
+
+    &__link-block{
+      &:hover{
+        .teacher__information-block{
+          .teacher__link-block{
+            color: #000;
+          }
+        }
+      }
+    }
+
+  }
+
+  .callback-form{
+    &__input-block{
+      label.error{
+        font-size: 16+2px;
+      }
+    }
+  }
+
+  .teacher-detail{
+
+    &__label{
+      font-size: 16+2px;
+    }
+
+    &__desc p{
+      font-size: 16+2px;
+    }
+
+    &__email a{
+      font-size: 16+2px;
+    }
+
+  }
+
+  .new-detail{
+
+    &__text-block{
+      p{
+        font-size: 16+2px;
+      }
+    }
+
+  }
+
+  .new{
+    &__title{
+      font-size: 24+2px;
+    }
+
+    &__date{
+      font-size: 16+2px;
+    }
+  }
+
+  .register{
+
+    &__input{
+      font-size: 18+2px;
+      &::-webkit-input-placeholder {font-size: 18+2px;}
+      &::-moz-placeholder          {font-size: 18+2px;}
+      &:-moz-placeholder           {font-size: 18+2px;}
+      &:-ms-input-placeholder      {font-size: 18+2px;}
+
+    }
+
+    &__input-block{
+      label.error{
+        font-size: 16+2px;
+      }
+    }
+
+  }
+
+  .callback-form{
+    &__callback-input{
+      font-size: 20+2px;
+    }
+
+    &__second-label{
+      font-size: 20+2px;
+    }
+
+    &__first-label{
+      font-size: 40+2px;
+    }
+  }
+
+  .submit-button{
+    font-size: 22+2px;
+  }
+
+  .footer-callbacks{
+    &__submit-button{
+      width: 261px;
+    }
+
+    &__callback-block{
+      left: -11px;
+    }
+  }
+
+    .teacher-filter{
+    &__title{
+      font-size: 18+2px;
+    }
+  }
+
+  .page-sub-header{
+    h2{
+      font-size: 32+4px;
+    }
+  }
+
+  .curriculum-table{
+    &__header-caption{
+      font-size: 20+4px;
+    }
+
+    &__sub-caption{
+      font-size: 13+4px;
+    }
+
+    &__examination-label,
+    &__examination{
+      font-size: 20px;
+    }
+  }
+
+  .curriculum-table-item{
+    &__name{
+      font-size: 18px;
+    }
+
+    &__td_duration{
+      font-size: 15px;
+    }
+  }
+
+  .contact__header,
+  .contact__address,
+  .contact__number,
+  .contact__email{
+    font-size: 16px;
+  }
+
+  .page-title-block{
+    &__subline{
+      font-size: 20+2px;
+    }
+  }
+
+  .detail-block{
+    &__teacher-head{
+      font-size: 20+2px;
+    }
+  }
+
+  .teacher-info{
+    &__FIO{
+      font-size: 16+2px;
+    }
+
+    &__post{
+      font-size: 12+2px;
+    }
+
+    &__assessment-label{
+      font-size: 13+2px;
+    }
+  }
+
+  .detail-annotations{
+    &__kol{
+      font-size: 19+2px;
+    }
+
+    &__annotation{
+      margin-right: 40px;
+			&:last-child{
+				margin-right: 0px;
+			}
+    }
+
+  }
+
+  .detail-block{
+    &__description{
+      font-size: 16+2px
+    }
+  }
+
+  .radio-teacher{
+    &__name,
+    &__portfolio-link{
+      font-size: 13+1px;
+    }
+
+  }
+
+  .faq-item{
+    &__header{
+      font-size: 16+2px;
+    }
+  }
+
+  .light-new{
+    &__date{
+      font-size: 16+2px;
+    }
+
+    &__title{
+      font-size: 24+2px;
+    }
+  }
+
+  .documents-content-box{
+    &__label{
+      font-size: 20+2px;
+    }
+  }
+
+}

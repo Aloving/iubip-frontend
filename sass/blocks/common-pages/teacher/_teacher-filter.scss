@@ -1,0 +1,71 @@
+.teacher-filter{
+  text-align: center;
+
+  &__item{
+    display: inline-block;
+    border-radius: 23px;
+
+
+    &_active{
+      background: #c03;
+      .teacher-filter__link{
+        color: #fff;
+      }
+      
+      .teacher-filter__icon{
+        filter: invert(0);
+      }
+
+      &:hover{
+        .teacher-filter__link{
+          color: #fff!important;
+        }
+      }
+    }
+  }
+  
+  &__icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+  }
+  
+  &__title-block{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__link{
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 23px;
+    padding-left: 13px;
+    display: block;
+    color: #69c;
+    &:hover{
+      color: #ef2849;
+    }
+  }
+
+  &__list{
+    padding-top: 47px;
+    text-align: center;
+    font-size: 0px;
+  }
+
+  &__title{
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.teacher-filter-all{
+  &__icon{
+    width: 27px;
+    height: 27px;
+    transform: rotate(90deg);
+  }
+}

@@ -1,0 +1,160 @@
+@media (min-width: 1466px){
+  .our-ways,
+  .about-advantages{
+    &:after{
+      height: 193px;
+    }
+    &-wrapper{
+      &:before{
+        transform: rotate(-1.4deg);
+        height: 241px;
+      }
+      &::after{
+        height: 297px;
+      }
+    }
+  }
+}
+
+@media (min-width: 2058px){
+  .teachers{
+    &:before{
+      height: 255px;
+    }
+  }
+.promos{
+  &:before{
+    height: 255px;
+    }
+  }
+}
+
+@media (min-width: 2200px){
+  .our-ways,
+  .about-advantages{
+    &:before{
+    }
+    &:after{
+    }
+    &-wrapper{
+      &:before{
+        transform: rotate(-1.4deg);
+        height: 270px;
+      }
+      &::after{
+        // bottom: -87px;
+        height: 297px;
+      }
+    }
+  }
+}
+
+@media (min-width: 2316px){
+  .our-ways,
+  .about-advantages{
+    &:before{
+      height: 283px;
+    }
+    &:after{
+      // height: 475px;
+    }
+  }
+  .teachers{
+    &:before{
+            top: -212px;
+      height: 290px
+    }
+  }
+.promos{
+  &:before{
+    height: 290px;
+    bottom: 100px;
+    }
+  }
+}
+
+@media (min-width: 2470px){
+  .our-ways,
+  .about-advantages{
+    &:before{
+      height: 307px;
+    }
+    &:after{
+      // height: 475px;
+    }
+  }
+  .teachers{
+    &:before{
+      height: 290px;
+    }
+  }
+.promos{
+  &:before{
+    height: 290px;
+    bottom: 70px;
+    }
+  }
+}
+
+@media (min-width: 2779px){
+  .our-ways,
+  .about-advantages{
+    &-wrapper{
+      &:before{
+        transform: rotate(-3.4deg);
+        height: 295px;
+        bottom: -58px;
+      }
+      &:after{
+        bottom: -75px;
+      }
+    }
+    &:before{
+      height: 341px;
+    }
+    &:after{
+      // height: 475px;
+    }
+  }
+  .teachers{
+    &:before{
+      top: -231px;
+      height: 334px;
+    }
+  }
+.promos{
+  &:before{
+    height: 290px;
+    bottom: 75px;
+    }
+  }
+}
+
+@media (min-width: 3706px){
+  .our-ways,
+  .about-advantages{
+    &-wrapper{
+      &:after{
+        height: 444px;
+      }
+    }
+    &:before{
+      height: 452px;
+    }
+    &:after{
+      height: 302px;
+    }
+  }
+  .teachers{
+    &:before{
+      height: 456px;
+      top: -139px;
+    }
+  }
+.promos{
+  &:before{
+    height: 456px;
+    bottom: 5px;
+    }
+  }
+}

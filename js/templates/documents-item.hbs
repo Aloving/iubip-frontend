@@ -1,0 +1,19 @@
+<div class="documents-content-box__search-item document-search-item document-search-item_parent {{#if child }} document-search-item_child {{/if}}js-document-item">
+
+  <div class="document-search-item__download-block">
+    <a href="{{ fileUrl }}" class="document-search-item__download-link">
+      <svg class="document-search-item__download-svg">
+        <use xlink:href="#download"></use>
+      <svg>
+      <span class="document-search-item__format js-document-format">{{ format }}</span>
+    </a>
+  </div>
+
+  <div class="document-search-item__information-block">
+    <div class="document-search-item__header">
+      <a href="{{ url }}" class="js-document-title">{{title}}</a>
+    </div>
+    <div class="document-search-item__description">{{description}}</div>
+  </div>
+
+</div>

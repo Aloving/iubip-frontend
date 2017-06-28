@@ -1,0 +1,181 @@
+@import './callback-form'; //callback form for index-page
+
+.footer{
+  overflow: hidden;
+  width: 100%;
+  position: absolute;;
+  bottom: -379px;
+  z-index: 1;
+  background-color: #1f287a;
+  height: 451px;
+
+  &__top-column{
+    padding-bottom: 88px;;
+  }
+
+  &__container{
+    position: relative;;
+    top: 200px;
+  }
+
+  &__logo-block,
+  &__navbars,
+  &__callbacks{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__callbacks{
+    width: 170px;
+    float: right;
+  }
+
+  &__logo{
+    width: 122px;
+    height: 86px;
+  }
+
+  &__navbars{
+    margin: 0px 128px 0px 86px;
+  }
+
+}
+
+.footer-first-nav{
+  margin-right: 122px;
+}
+
+.footer-second-nav{
+  margin-right: 138px;
+}
+
+.footer-nav{
+  vertical-align: top;
+  display: inline-block;
+  padding-top: 5px;
+
+  &:last-child{
+    margin-right: 0px;
+  }
+
+  &__elem{
+    display: block;
+    padding-top: 10px;
+
+    &:first-child{
+      padding-top: 0px;
+    }
+
+  }
+
+  &__link{
+    text-decoration: none;
+    color: #69c;
+    font-size: 14px;
+
+    &:hover{
+      color: lighten(#69c, 25%);
+    }
+
+  }
+}
+.footer-callbacks{
+  padding-top: 4px;
+
+  &__callback-block{
+    position: relative;
+    left: -33px;
+  }
+
+  &__submit-button{
+    width: 210px;
+    padding: 10px 0px;
+    font-size: 14px;
+  }
+
+  &__label{
+    margin-bottom: 16px;
+    font-size: 13px;
+    color: #69c;
+    margin-top: 6px;
+  }
+
+  &__phone{
+    font-size: 20px;
+    position: relative;
+    color: #fff;
+    font-weight: 300;
+
+    svg{
+      position: absolute;
+      left: -30px;
+      top: 0px;
+      width: 16px;
+      height: 23px;
+
+      use{
+        fill: #669ed6;
+      }
+
+    }
+
+  }
+}
+.socials{
+  position: relative;
+
+  &:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #2d4394;
+  }
+
+  @include clearfix()
+  &__buttons{
+    float: right;
+    padding: 18px 0px 0px;
+  }
+
+  &__copyright{
+    padding: 25px 0px;
+    float:left;
+    color: #36c;
+    font-size: 13px;
+    font-weight: 300;
+  }
+
+}
+
+.social-buttons{
+  &__list{
+    font-size: 0px;
+  }
+
+  &__button-block{
+    margin-right: 8px;
+    display: inline-block;
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
+
+  &__button{
+    svg{
+      width: 33px;
+      height: 33px;
+
+      use{
+        fill: #669ed6;
+      }
+
+      &:hover{
+        use{
+          fill: #ef2848;
+        }
+      }
+
+    }
+  }
+
+}

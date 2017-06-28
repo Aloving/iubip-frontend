@@ -1,0 +1,12 @@
+@import "mixins";
+@import "base";
+@import "layout";
+@import "blocks";
+@import "modules";
+@import "variables";
+@import "light-version";
+
+.cap{
+	margin: 100px auto 150px;
+	text-align: center;
+}

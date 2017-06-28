@@ -1,0 +1,347 @@
+body.light-15{
+
+	.about-block{
+		&__text-block{
+			p{
+				font-size: 16px;
+			}
+		}
+	}
+
+	.about-counters{
+		p{
+			font-size: 18px;
+		}
+	}
+
+	.page-title-block{
+		h1{
+			font-size: 40px;
+		}
+	}
+
+	.phones{
+
+		&__phone-number{
+			font-size: 24px;
+		}
+
+		&__label-phone{
+			font-size: 24px;
+		}
+
+	}
+
+	.index-menu,
+	.common-nav{
+
+		&__item{
+			a{
+				font-size: 20px;
+			}
+		}
+
+	}
+
+	.light-version{
+		font-size: 18px;
+	}
+
+	.header{
+		&__login-btn{
+			font-size: 18px;
+		}
+	}
+
+	.light-slider{
+
+		.page-block-header{
+
+			h2{
+				font-size: 40px;
+			}
+
+		}
+
+		&__all-link{
+			font-size: 24px;
+		}
+
+	}
+
+	.light-slide{
+
+		&__link{
+			font-size: 18px;
+		}
+
+		&__title{
+			p{
+				font-size: 24px;
+			}
+
+		}
+
+		&__description{
+			p{
+				font-size: 16px;
+			}
+
+		}
+
+	}
+
+	.our-ways{
+
+		&__light-all{
+			font-size: 24px;
+		}
+
+		.block-header{
+			font-size: 40px;
+		}
+
+	}
+
+	.footer-nav{
+
+		&__link{
+			font-size: 16px;
+		}
+
+	}
+
+	.footer-callbacks{
+
+		&__phone{
+			font-size: 24px;
+		}
+
+		&__submit-button{
+			font-size: 18px;
+		}
+
+	}
+
+	.socials{
+		&__copyright{
+			font-size: 16px;
+		}
+	}
+
+	.direction-item{
+		&__title{
+			font-size: 24px;
+		}
+	}
+
+	.document-search-item{
+		&__header a{
+			font-size: 24px;
+		}
+
+		&__description{
+			font-size: 16px;
+		}
+
+	}
+
+	.documents-list{
+		padding-bottom: 100px;
+		margin-bottom: 0px;
+	}
+
+	.search-item{
+		&__header a{
+			font-size: 24px;
+		}
+
+		&__description{
+			font-size: 16px;
+		}
+
+	}
+
+	.page-title-block{
+		h1{
+			color: #000;
+		}
+
+		&__subline{
+			color: #000;
+		}
+	}
+
+	.detail-block{
+		&__teacher-head{
+			color: #000;
+		}
+	}
+
+	.teacher-info{
+		&__FIO{
+			color: #000;
+		}
+
+		&__degrees,
+		&__pos{
+			color: #000;
+		}
+	}
+
+	.faq-item{
+		&__description{
+			font-size: 16px;
+		}
+	}
+
+	.about-advantage{
+		&__title p{
+			font-size: 24px;
+		}
+
+		&__description p{
+			font-size: 16px;
+		}
+
+	}
+
+	.teacher{
+
+		&__name{
+			font-size: 20px;
+		}
+
+		&__degrees,
+		&__positions{
+			font-size: 16px;
+		}
+
+		&__link-block{
+			&:hover{
+				.teacher__information-block{
+					.teacher__link-block{
+						color: #000;
+					}
+				}
+			}
+		}
+
+	}
+
+	.callback-form{
+		&__input-block{
+			label.error{
+				font-size: 16px;
+			}
+		}
+	}
+
+	.teacher-detail{
+
+		&__label{
+			font-size: 16px;
+		}
+
+		&__desc p{
+			font-size: 16px;
+		}
+
+		&__email a{
+			font-size: 16px;
+		}
+
+	}
+
+	.new-detail{
+
+		&__text-block{
+			p{
+				font-size: 16px;
+			}
+		}
+
+	}
+
+	.new{
+		&__title{
+			font-size: 24px;
+		}
+
+		&__date{
+			font-size: 16px;
+		}
+	}
+
+	.register{
+
+		&__input{
+			font-size: 18px;
+			&::-webkit-input-placeholder {font-size: 18px;}
+	    &::-moz-placeholder          {font-size: 18px;}
+	    &:-moz-placeholder           {font-size: 18px;}
+	    &:-ms-input-placeholder      {font-size: 18px;}
+
+		}
+
+		&__input-block{
+			label.error{
+				font-size: 16px;
+			}
+		}
+
+	}
+
+	.way-item{
+		&__title{
+			font-size: 20px;
+		}
+	}
+
+	.callback-form{
+		&__callback-input{
+			font-size: 20px;
+		}
+
+		&__second-label{
+			font-size: 20px;
+		}
+
+		&__first-label{
+			font-size: 40px;
+		}
+	}
+
+	.submit-button{
+		font-size: 22px;
+	}
+
+	.light-new{
+
+	}
+
+  .page-title-block{
+    &__subline{
+      font-size: 20px;
+    }
+
+    &__post{
+      font-size: 12px;
+    }
+  }
+
+  .detail-annotations{
+    &__kol{
+      font-size: 19px;
+    }
+
+    &__annotation{
+      margin-right: 40px;
+			&:last-child{
+				margin-right: 0px;
+			}
+    }
+
+  }
+
+}

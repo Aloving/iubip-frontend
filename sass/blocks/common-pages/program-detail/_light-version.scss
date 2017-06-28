@@ -1,0 +1,137 @@
+body.lightVersion{	
+	.page-title-block{
+		&__subline{
+			font-weight: 400;
+		}
+	}
+
+	.teacher-info{
+
+		&__image-block{
+			img{
+				@include grayscale();
+			}
+		}
+
+		&__degrees,
+		&__pos{
+			font-weight: 400;
+		}
+
+		&__assessment-label{
+			font-weight: 400;
+		}
+	}
+
+	.detail-block{
+		&__description{
+			font-weight: 400;
+		}
+	}
+
+	.portfolio-carousel{
+
+		.owl-prev{
+			transform: rotate(180deg);
+		}
+
+		&__slide{
+			img{
+				@include grayscale();
+			}
+		}
+
+		.owl-nav-next,
+		.owl-nav-prev{
+
+			svg{
+				use{
+					fill: #333;
+				}
+			}
+
+			&:hover{
+				svg{
+					use{
+						fill: #000
+					}
+				}				
+			}
+
+		}
+
+	}
+
+	.curriculum-detail{
+		background: #fff;
+	}
+
+	.curriculum-table-block{
+		border-radius: 10px;
+	}
+
+	.curriculum-table{
+
+		&__sub-caption{
+			font-weight: 400;
+		}
+
+	}
+
+	.curriculum-table-item{
+
+		&__name{
+			&_exam,
+			&_pass{
+				&:after{
+					background-color: #000;
+				}
+			}
+		}
+
+		&__td_duration{
+			font-weight: 400;
+		}
+
+	}
+
+	.radio-teacher{
+		&__portfolio-link{
+			font-weight: 400;
+			text-decoration: underline;
+		}
+
+		&__image{
+			@include grayscale();
+		}
+	}
+
+	.faq-item{
+		&__description{
+			font-weight: 400;
+		}
+	}
+
+	.detail-feedback-wrapper{
+		display: none;
+	}
+
+	.detail-faq{
+		padding-bottom: 210px;
+	}
+
+	.program-detail{
+		&__if-image{
+			img{
+				@include grayscale();
+			}
+		}
+	}
+
+	.sub-description{
+		&__image-span{
+			@include grayscale();
+		}
+	}
+
+}

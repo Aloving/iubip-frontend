@@ -1,0 +1,902 @@
+body.light-white{
+
+	.light-controls{
+		&__label{
+			color: #000;
+		}
+
+		&__font-link{
+			color: #000;
+
+			&_active{
+				background-color: #fff;
+			}
+
+		}
+
+	}
+
+	.phones{
+
+		&__label-phone{
+			color: #000;
+		}
+
+		&__phone-number{
+			color: #000;
+		}
+
+		&__phone-item{
+
+			svg{
+				use{
+					fill: #000;
+				}
+			}
+
+		}
+
+	}
+
+	.index-menu,
+	.common-nav{
+
+		&:before{
+			content: "";
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			border-bottom: 2px solid #000;
+		}
+
+		&:after{
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			width: 100%;
+			border-bottom: 2px solid #000;
+		}
+
+		&__item{
+
+			a{
+				color: #000;
+
+				&:hover{
+					background-color: #000;
+					color: #fff;
+				}
+
+			}
+
+		}
+
+	}
+
+	.header{
+
+		&__login-btn{
+			background-color: #000;
+		}
+
+	}
+
+	.light-slide{
+
+		border: 2px solid #000;
+		&__link{
+			background-color: #000;
+			color: #fff;
+		}
+
+	}
+
+	.page-title-block{
+		h1{
+			color: #000;		
+		}
+
+		&__subline{
+			color: #000;
+		}
+	}
+
+	.detail-block{
+		&__teacher-head{
+			color: #000;
+		}
+	}
+
+	.teacher-info{
+		&__FIO{
+			color: #000;
+		}
+
+		&__degrees,
+		&__pos{
+			color: #000;
+		}
+	}
+
+	.light-slider{
+
+		.page-block-header{
+
+			h2{
+				color: #000;
+			}
+
+		}
+
+		&__all-link{
+			color: #000;
+		}
+
+	}
+
+	.way-item{
+
+		&__link{
+			border: 2px solid #000;
+		}
+
+	}
+
+	.our-ways{
+		&__light-all{
+			color: #000;
+		}
+	}
+
+	.footer{
+		background-color: #fff;
+
+		&:before{
+			border-bottom: 2px solid #000;
+		}
+
+	}
+
+	.footer-nav{
+
+		&__link{
+			color: #000;
+
+			&:hover{
+				color: #000;
+			}
+
+		}
+
+	}
+
+	.footer-callbacks{
+
+		&__phone{
+			color: #000;
+		}
+
+	}
+
+	.submit-button{
+		background-color: #000;
+
+		&:hover{
+			background-color: #000;
+		}
+
+	}
+
+	.socials{
+		&__copyright{
+			color: #000;
+		}
+	}
+
+	.social-buttons{
+
+		&__button{
+
+			svg{
+
+				use{
+					fill: #000;
+
+				}
+
+				&:hover{
+					use{
+						fill: #535353;
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+	.direction-item{
+		background: #fff;
+		border-color: #000;
+
+		&:hover{
+			background: #000;
+
+			.direction-item__title{
+				color: #fff;
+			}
+
+		}
+
+		&__title{
+			color: #000;
+		}
+
+		&_active{
+      background: #000;
+
+			.direction-item__title{
+				color: #fff;
+			}
+
+    }
+
+	}
+
+	.search-page,
+	.documents-list{
+
+		&__search-input{
+			background: #fff;
+			border: 2px solid #000;
+			color: #000;
+			&::-webkit-input-placeholder {color:lighten(#000, 25%);}
+			&::-moz-placeholder          {color:lighten(#000, 25%);}
+			&:-moz-placeholder           {color:lighten(#000, 25%);}
+			&:-ms-input-placeholder      {color:lighten(#000, 25%);}
+		}
+
+		&__search-label{
+			svg{
+				use{
+					fill: #000;
+				}
+			}
+		}
+
+	}
+
+	.documents-list{
+		&:after,
+		&:before{
+			display: none;
+		}
+
+		&__content-box{
+			border: 2px solid #000;
+		}
+		
+	}
+
+	.search-item{
+
+		&__header{
+
+			& a{
+				color: #000;
+				font-weight: 400;
+
+				& strong{
+					color: #000;
+					font-weight: 400;
+				}
+
+				&:hover{
+					color: #000;
+
+					& strong{
+						color: #000;
+					}
+
+				}
+			}
+		}
+
+		&__course,
+		&__direction,
+		&__document,
+		&__new{
+			&:after{
+				background-color: #000
+			}
+		}
+
+		&__numb{
+			background: #000;
+		}
+
+	}
+
+	.document-search-item{
+
+		&:after{
+			border-bottom: 1px solid #000000;
+		}
+
+		&__header{
+			& a{
+				color: #000;
+
+				& strong{
+					color: #000;
+				}
+
+			}
+		}
+
+		&__description{
+			color: #000;
+		}
+
+		&__download-svg{
+			use{
+				fill: #000
+			}
+		}
+	}
+
+	.search-item{
+
+		&__description{
+			color: #000;
+		}
+
+	}
+
+	.way-item{
+		&__link{
+			background-color: #fff;
+
+			&:hover{
+				background-color: #000;
+
+				.way-item__title{
+					color: #fff;
+				}
+
+			}
+
+		}
+	}
+
+	.detail-annotations{
+		&__svg{
+			use{
+				fill: #000;
+			}
+		}
+
+		&__price{
+			color: #000;
+		}
+	}
+
+	.teacher-info{
+		&__star{
+			&_active{
+				svg{
+					use{
+						fill: #000;
+					}
+				}
+			}
+		}
+
+		&__assessment-label{
+			color: #000;
+		}
+	}
+
+	.detail-block{
+		&__description{
+			color: #000;
+		}
+	}
+
+	.detail-feature{
+		&__title p,
+		&__description p{
+			color: #000;
+		}
+
+		&__description{
+			ul{
+				color: #000;
+				li{
+					&:before{
+						background-color: #000;
+					}
+				}
+			}
+		}
+
+	}
+
+	.sub-description{
+		&__title p{
+			color: #000;
+		}
+
+		&__description{
+			color: #000;
+		}
+
+		&__image-block{
+			background-color: #fff;
+			border: 2px solid #000;
+		}
+	}
+
+	.portfolio-carousel{
+		&__slide img{
+			border: 2px solid #000;
+		}
+	}
+
+	.page-sub-header{
+		h2{
+			color: #000;
+		}
+	}
+
+	.curriculum-table-block{
+		border: 3px solid #000;
+	}
+
+	.curriculum-table{
+		&__header-caption{
+			color: #000;
+		}
+
+		&__sub-caption{
+			color: #000;
+		}
+
+		&__examination{
+			color: #000;
+		}
+
+		&__examination-label{
+			color: #000;
+		}
+
+	}
+
+	.curriculum-table-item{
+		&:last-child{
+			&:before{
+				border-bottom: 1px solid #000;
+			}
+		}
+
+		&__td_duration{
+			color: #000;
+		}
+
+	}
+
+	.radio-teacher{
+		&__portfolio-link{
+			color: #000;
+		}
+
+		&__name{
+			color: #000;
+		}
+	}
+
+	.faq-item{
+		&__header{
+			background-color: #fff;
+			color: #000;
+			border: 2px solid #000;
+
+			&_active{
+				background: #000;
+				color: #fff;
+
+				.faq-item__angle{
+					svg{
+						use{
+							fill: #fff;
+						}
+					}
+				}
+			}
+		}
+
+		&__description{
+			color: #000;
+		}
+
+		&__angle{
+			svg{
+				use{
+					fill: #000;
+				}
+			}
+		}
+
+	}
+
+	.about-block{
+
+		&__text-block{
+			p{
+				color: #000;
+			}
+		}
+
+	}
+
+	.about-counters{
+		&__counter{
+			color: #000;
+		}
+
+		&__label p{
+			color: #000;
+		}
+
+	}
+
+	.about-advantage{
+		&__title p{
+			color: #000;
+		}
+	
+		&__description p{
+			color: #000;
+		}
+
+	}
+
+	.about-gallery,
+	.teacher-gallery,
+	.new-detail-carousel{
+
+		.owl-dot{
+			background: #fff;
+			border: 2px solid #000;
+			&.active{
+				background: #000;
+			}
+		}
+
+		.owl-nav-prev,
+		.owl-nav-next{
+
+			svg{
+				use{
+					fill: lighten(#000, 25%);
+				}
+
+				&:hover{
+					use{
+						fill: #000;
+					}
+				}
+
+			}
+		}
+
+	}
+
+	.teacher{
+
+		&__name{
+			color: #000;
+
+			&:hover{
+				color: #000;
+			}
+
+		}
+
+		&__degrees,
+		&__positions{
+			color:#000;
+		}
+
+		&__link-block{
+	    &:hover{
+
+	      .teacher__name{
+	        color: #000;
+	      }
+
+	      &+ .teacher__information-block .teacher__name{
+	        color: #000;
+	      }
+
+	    }
+  	}	
+
+	}
+
+	.teacher-detail{
+
+		&__label{
+			color: #000;
+
+			span{
+				&:after{
+					color: #000;
+				}
+			}
+
+		}
+
+		&__email a{
+			color: #000;
+		}
+
+	}
+
+	.new-sub-detail{
+
+		&__date{
+			p{
+				color: #000;
+			}
+		}
+
+		&:after{
+			border-bottom: 1px solid #000;
+		}
+
+	}
+
+	.new-detail{
+
+		&__text-block{
+			p{
+				color: #000;
+			}
+		}
+
+	}
+
+	.new{
+		&__link{
+			background: #fff;
+			border: 2px solid #000;
+		}
+
+		&__text-block{
+			color: #000;
+		}
+
+		&__date{
+			color: #000;
+		}
+	}
+
+	.modal{
+		&__container{
+			background: #fff;
+		}
+
+		&__header{
+			color: #000;
+		}
+
+		&__input{
+			border: 2px solid #000;
+			color: #000;
+			&::-webkit-input-placeholder {color:#333;}
+	    &::-moz-placeholder          {color:#333;}/* Firefox 19+ */
+	    &:-moz-placeholder           {color:#333;}/* Firefox 18- */
+	    &:-ms-input-placeholder      {color:#333;}
+		}
+
+		&__input-block{
+			& label.error{
+				color: #000;
+	    }
+		}
+	}
+
+	.light-slide{
+		&__title{
+			a{
+				color: #000;
+			}
+		}
+	}
+
+	.radio-teacher__radio:checked+.radio-teacher__image-block>.radio-teacher__check-mark{
+		background: #000;
+	}
+
+	.radio-teacher_error .radio-teacher__image-block{
+		border: 2px solid #000;
+	}
+
+	.callback-form{
+		&__container{
+			background: #fff;
+		}
+
+		&__callback-input{
+			border: 2px solid #000!important;
+			color: #000;
+			&::-webkit-input-placeholder {color:#333;}
+	    &::-moz-placeholder          {color:#333;}/* Firefox 19+ */
+	    &:-moz-placeholder           {color:#333;}/* Firefox 18- */
+	    &:-ms-input-placeholder      {color:#333;}
+		}
+
+		&__image-block{
+			display: none;
+		}
+
+		&__first-label,
+		&__second-label{
+			color: #000;
+		}
+
+		&__input-block{
+			label.error{
+				color: #000;
+				bottom: -20px;
+			}
+		}
+	}
+
+	.autocomplete-suggestions{
+		border: 2px solid #000;
+		border-top: 0px;
+
+		.autocomplete-suggestion{
+			border-top: 2px solid rgba(000,000,000,0.9);
+			color: #000;
+
+			&:first-child{
+				border-top: 0px;
+			}
+
+			&:hover{
+				background: #000;
+				color: #fff;
+			}
+
+		}
+
+	}
+
+	.light-new{
+		&__title,
+		&__date{
+			color: #000;
+		}
+
+		&__link{
+			background-color: #fff;
+			
+			&:hover{
+				background-color: #000;
+				.light-new__title,
+				.light-new__date{
+					color: #fff;
+				}
+			}
+
+		}
+	}
+
+	.register{
+
+		&__input{
+			border: 2px solid #000!important;
+			background-color: #fff;
+			font-size: 18px;
+
+			&::-webkit-input-placeholder {color:#000; font-weight: 400; font-size: 18px;}
+	    &::-moz-placeholder          {color:#000; font-weight: 400; font-size: 18px;}
+	    &:-moz-placeholder           {color:#000; font-weight: 400; font-size: 18px;}
+	    &:-ms-input-placeholder      {color:#000; font-weight: 400; font-size: 18px;}
+
+			&[disabled]{
+				background-color: #000;
+				color: #fff;
+			}
+		}
+
+		&__file-label{
+			svg{
+				use{
+					fill: #000;
+				}
+			}
+		}
+
+		&__file-span{
+			color: #000;
+		}
+
+		&__input-block{
+			label.error{
+				color: #000;
+				font-weight: 400;
+			}
+		}
+
+	}
+
+	.documents-content-box{
+		&__label-block{
+			background-color: #000;
+		}
+	}
+
+	.teachers{
+		&__teacher-list{
+			border: 2px solid #000;
+		}
+	}
+
+	.teacher-filter{
+		&__link{
+			color: #000;
+		}
+
+		&__item{
+			&_active{
+				background: #000;
+
+				.teacher-filter__link{
+					color: #fff;
+				}
+
+			}
+		}
+
+	}
+
+		.owl-next,
+		.owl-prev{
+			svg{
+				&:hover{
+					use{
+						fill: #000;
+					}
+				}
+			}
+		}
+	
+	[data-uptlwtype="share-button"]{
+		.sn-icon{
+			background-color: #000!important;
+			&:hover{
+				background-color: lighten(#000, 25%)!important;
+			}
+		}
+	}
+
+	.login-modal{
+		&__forgot-link{
+			color: #000;
+		}
+	}
+
+	.modal{
+		&__container{
+			color: #000;
+		}
+	}
+
+}

@@ -1,0 +1,92 @@
+body.lightVersion{
+
+	.new-detail{
+		margin-bottom: 26px;
+
+		&__image{
+			@include grayscale();
+		}
+
+		.page-title-block{
+			margin: 69px 0px 62px;
+		}
+
+		&__text-block{
+			p{
+				font-weight: 400;
+			}
+		}
+
+	}
+
+	.new-detail-carousel-block{
+		min-height: 646px;
+
+		.page-block-title{
+			margin: 0 0 61px;
+		}
+
+		&:after{
+			background: #fff;
+		}
+
+	}
+
+	.new{
+		&__link{
+			display: table;
+			text-decoration: none;
+		}
+
+		&__text-block{
+			position: relative;
+			display: table-cell;
+			vertical-align: middle;
+			padding: 0 24px;
+		}
+
+		&__image{
+			display: none;
+		}
+
+		&__title{
+			font-weight: 400;
+		}
+
+		&__date{
+			font-weight: 400;
+		}
+	}
+
+	.short-new{
+		&__link{
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	.information-carousel{
+		&__main-image{
+			@include grayscale();
+		}
+
+		&__preview-image{
+			@include grayscale();
+		}
+	}
+  
+  .about-video{
+    display: none;
+  }
+  
+  .about-advantages{
+    padding-bottom: 0px;
+  }
+  
+  .header{
+    &__login-btn{
+      text-align: center;
+    }
+  }
+}

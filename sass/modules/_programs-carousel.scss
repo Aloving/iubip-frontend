@@ -1,0 +1,208 @@
+@import '../variables';
+
+.recommendations{
+
+  position: relative;
+
+  .block-header{
+    margin-bottom: 38px;
+  }
+}
+.recommendations-slider{
+
+  .carousel-prev-btn,
+  .carousel-next-btn{
+    svg{
+      width: 35px;
+      height: 35px;
+      use{
+        fill: #c4c4c4;
+      }
+      &:hover{
+        use{
+          fill: #69c;
+        }
+      }
+    }
+  }
+  .owl-nav-wrap{
+    text-align: center;
+  }
+  .owl-dots{
+    padding-top: 7px;
+  }
+  .owl-dot{
+    width: 6px;
+    height: 6px;
+    background: #000;
+    display: inline-block;
+    margin-right: 24px;
+    border-radius: 50%;
+    background: #5563b5;
+    &:last-child{
+      margin-right: 0px;
+    }
+    &.active{
+      background: #c03;
+    }
+  }
+  .owl-carousel-navigation{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+  }
+  .owl-dots{
+    display: inline-block;
+    text-align: center;
+  }
+  // .owl-pagination{
+  //   display: inline-block;
+  // }
+
+  // .owl-prev,
+  // .owl-next{
+  //   margin: 0px!important;
+  // }
+  //
+  .owl-next{
+    position: absolute;
+    top: 0px;
+    right: -62px;
+  }
+
+  .owl-prev{
+    position: absolute;
+    left: -62px;
+    top: 0px;
+  }
+  .owl-stage-outer{
+    padding: 30px 12px 48px;
+  }
+  .owl-item{
+    position: relative;
+    bottom: 0px;
+    transition: 0.5s;
+    &:hover{
+      bottom: 10px;
+
+    }
+  }
+
+}
+
+.rec-slide{
+  text-align: center;
+  display: inline-block;
+  width: 265px;
+  background: $greyBy;
+  border-radius: 6px 6px 0px 0px;
+  vertical-align: bottom;
+  transition: 0.5s;
+
+  &__course-name{
+    position: relative;
+    overflow: hidden;
+    height: 36px;
+  }
+
+  &__annotation{
+    display: inline-block;
+    background: #fff;
+    position: absolute;
+    padding: 0px 4px;
+    border-radius: 5px;
+    bottom: 0px;
+    right: 0px;
+    border: 1px solid #adadad;
+  }
+
+  &__block-link{
+    position: relative;
+    text-decoration: none;
+
+    &:hover{
+      .rec-slide__course-name{
+        color: #ef2849;
+      }
+    }
+  }
+
+  &__img-block{
+    font-size: 0px;
+    overflow: hidden;
+  }
+
+  &__img{
+    display: block;
+    width: 100%;
+    height: 185px;
+    border-radius: 4px 4px 0px 0px;
+  }
+
+  &:hover{
+    bottom: 10px;
+    background: #fff;
+  }
+
+  &__content-block{
+      border: 1px solid rgba(#adadad, 0.4);
+    text-align: left;
+    padding: 25px 18px 23px;
+  }
+
+  &__text-block{
+    overflow: hidden;
+    height: 130px;
+    margin-bottom: 17px;
+  }
+
+  &__title{
+    text-align: left;
+    padding-bottom: 12px;
+
+    p{
+      height: 35px;
+      margin: 0px;
+      color: #333;
+      font-size: 16px;
+      font-weight: 500;
+    }
+
+  }
+
+  &__description{
+    text-align: left;
+    margin: 0 auto;
+
+    p{
+      text-decoration: none;
+      margin: 0px;
+      height: 85px;
+      overflow: hidden;
+      color: #666;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+  }
+
+  &__link{
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    width: 210px;
+    padding: 14px 0px;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 60px;
+    background-color: #5563b5;
+    transition: 0.2s;
+    margin: 0 auto;
+    &:hover{
+      background: #ef2848;
+    }
+
+  }
+
+}

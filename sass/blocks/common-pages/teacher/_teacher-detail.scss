@@ -1,0 +1,106 @@
+.teacher-detail{
+
+  @include clearfix();
+  margin-bottom: 100px;
+
+  .page-title-block{
+    margin: 57px 0px 45px;
+  }
+
+  &__image-block{
+    max-width: 365px;
+    float: left;
+    font-size: 0px;
+    position: relative;
+  }
+
+  &__image{
+    border-radius: 6px;
+    width: 365px;
+    height: 365px;
+  }
+
+  &__description{
+    float: right;
+    max-width: 745px;
+  }
+
+  &__label{
+    vertical-align: top;
+    display: inline-block;
+    vertical-align: middle;
+    width: 285px;
+    color: #666;
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+
+    span{
+      background: #fff;
+      padding-right: 10px;
+      &:after{
+        content: "- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - ";
+        position: absolute;
+        white-space: nowrap;
+        color: #ebebeb;
+        left: 0px;
+        top: 3px;
+        z-index: -1;
+      }
+    }
+
+  }
+
+  &__desc{
+    vertical-align: middle;
+    display: inline-block;
+    width: 445px;
+    color: #666;
+    line-height: 1.8;
+    background-color: #fff;
+    font-family: $visFonts!important;
+    font-size: 14px;
+
+    span{
+      font-family: $visFonts!important;
+    }
+
+    p{
+      font-weight: 400;
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 14px;
+      font-family: $visFonts!important;
+    }
+
+    ul,ol,dl{
+      font-family: $visFonts!important;
+      padding-left: 30px;
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+
+  &__email{
+    a{
+      font-size: 14px;
+      color: #69c;
+      text-decoration: none;
+      font-weight: 400;
+      margin: 0px;
+    }
+  }
+
+  &__item{
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+    p{
+      background: #fff;
+      margin: 0px;
+    }
+  }
+
+}

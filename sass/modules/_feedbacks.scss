@@ -1,0 +1,224 @@
+.feedback{
+padding-top: 0px;
+bottom: 30px;
+min-height: 607px;
+padding-bottom: 100px;
+position: relative;
+overflow: hidden;
+}
+
+.feedback-slider{
+
+  &.not-carousel{
+    .feedback-slider__description{
+      p{
+        height: 272px!important;
+      }
+
+    }
+
+    .owl-stage{
+      margin: 0 auto;
+    }
+
+  }
+
+  .owl-dots{
+    padding-top: 7px;
+  }
+
+  .owl-stage-outer{
+    padding-bottom: 70px;
+  }
+
+  .owl-item{
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
+  }
+
+  .owl-carousel-navigation{
+    display: inline-block;
+    position: relative;
+  }
+
+  .owl-prev,
+  .owl-next{
+    position: absolute;
+    top: 0px;
+  }
+
+  .owl-prev{
+    left: -62px;
+  }
+  .owl-nav-prev svg,
+  .owl-nav-next svg{
+    width: 35px;
+    height: 35px;
+
+    use{
+      fill: #c4c4c4;
+    }
+
+    &:hover{
+      use{
+        fill: #d11533;
+      }
+    }
+
+  }
+  .owl-next{
+    right: -62px;
+  }
+  .owl-dot{
+    width: 6px;
+    height: 6px;
+    background: #000;
+    display: inline-block;
+    margin-right: 24px;
+    border-radius: 50%;
+    background: #669ed6;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+
+    &.active{
+      background: #c03;
+    }
+
+  }
+
+  .owl-nav-wrap{
+    text-align: center;
+  }
+
+  .owl-item .feedback-slider__description p{
+    display: block;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+  }
+  .owl-item .feedback-slider__description{
+    transition: box-shadow 0.5s ;
+
+    &:after{
+      z-index: -1;
+      content: "";
+      border-bottom: 2px solid #e9e9e9;
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      background: $greyBy;
+      transform: rotate(45deg); /* Не забываем про префиксы */
+      bottom: -7px;
+      left: 49px;
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      width: 21px;
+      height: 16px;
+      background: $greyBy;
+      transform: rotate(45deg); /* Не забываем про префиксы */
+      bottom: -5px;
+      left: 47px;
+    }
+
+    &:hover{
+      &:after{
+        // box-shadow: 0px 0px 6px 3px rgba(166, 166, 166,0.4);
+      }
+    }
+
+  }
+
+  .owl-item .feedback-slider__description p{
+    height: 207px;
+    margin: 0;
+    overflow: hidden;
+    transition: 0.7s;
+  }
+
+  .owl-item.active.center .feedback-slider__description p{
+    height: 277px;
+    transition: 0.7s;
+  }
+
+  &__description-block{
+    position: relative;
+    height: 350px;
+  }
+
+  &__name{
+    color: #333;
+    padding-bottom: 7px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+
+  &__user-block{
+    padding-left: 20px;
+    padding-top: 27px;
+  }
+
+  &__date{
+    font-size: 12px;
+    color: #6598cd;
+  }
+
+  &__slide{
+    margin: 0px;
+    display: inline-block;
+    float: none;
+    width: 350px;
+  }
+
+  &__image-block{
+    width: 75px;
+    height: 75px;
+  }
+
+  &__information-block,
+  &__image-block{
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &__information-block{
+    margin-left: 17px;
+  }
+
+  &__image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+  }
+
+  &__description{
+    border-bottom: 2px solid #e9e9e9;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 5px;
+    padding: 25px 28px;
+    background: $greyBy;
+    color: #666;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.7;
+  }
+}
+
+.detail-feedback-wrapper .feedback .feedback-slider{
+  &__description{
+    background: #fff;
+    &:before,
+    &:after{
+      background: #fff;
+    }
+
+  }
+
+}

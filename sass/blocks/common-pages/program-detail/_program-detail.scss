@@ -1,0 +1,288 @@
+  .program-detail{
+  @include clearfix();
+  min-height: 450px;
+  overflow: hidden;
+
+  &__view-block,
+  &__detail-block{
+    vertical-align: top;
+  }
+
+  &__view-block{
+    box-sizing: content-box;
+    padding: 0px 40px 25px 0px;
+    background: #fff;
+    float:left;
+    position: relative;
+    width: 536px;
+    height: 399px;
+    z-index: 10;
+  }
+
+  &__if-image{
+    font-size: 0px;
+    img{
+      border-radius: 6px;
+      width: 536px;
+      height: 399px;
+    }
+  }
+
+  &__if-video{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+  }
+
+}
+
+.detail-block{
+
+  &__sub-descriptions{
+    margin-left: 13px;
+  }
+
+  &__feature{
+    margin-top: 14px;
+  }
+
+  &__sub-description{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 66px;
+
+    &:nth-child(2n){
+      margin-right: 0px;
+    }
+
+  }
+
+  &__teach-info{
+    display: table;
+    margin-bottom: 20px;
+  }
+
+  &__teacher-head{
+    margin: 0px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 23px;
+    font-size: 20px;
+  }
+
+  &__description{
+    line-height: 1.8;
+    font-size: 16px;
+    color: #666;
+    span{
+      font-family: $visFonts!important;
+    }
+  }
+
+}
+
+.detail-price{
+  position: relative;
+  padding: 19px;
+  font-weight: 400;
+  left: 50px;
+
+  svg{
+
+    // position: absolute;
+    // left: -43px;
+    // top: -5px;
+  }
+
+  &__label{
+    position: relative;
+    color: #333;
+    font-size: 16px;
+  }
+
+}
+
+.detail-feature{
+
+  &__title,
+  &__description{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__description{
+    width: 934px;
+    color: #666;
+    line-height: 1.8;
+
+    p{
+      font-size: 16px;
+      color: #666;
+      line-height: 1.8;
+    }
+
+    ul,ol,dl{
+      padding-left: 24px;
+      font-size: 16px;
+      color: #666;
+      line-height: 1.8;
+    }
+
+    ul{
+      list-style: none;
+      li{
+        position: relative;
+        &:before{
+          content: "";
+          position: absolute;
+          top: 12px;
+          left: -21px;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #cf0f3f;
+        }
+      }
+
+    }
+
+  }
+
+  &__title{
+    width: 176px;
+    margin-right: 20px;
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      color: #333;
+      line-height: 1.3;
+    }
+
+  }
+
+}
+
+.detail-annotations{
+  position: relative;
+  padding: 10px 0px;
+  margin-bottom: 24px;
+
+  &__kol{
+    margin-left: 10px;
+    font-size: 19px;
+    color: #333;
+    font-weight: 400;
+  }
+
+  &__annotation{
+    display: inline-block;
+    margin-right: 60px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+
+  }
+
+  &__price{
+    color: #c00;
+  }
+
+  &__rub-label{
+    color: #c00;
+    font-size: 16px;
+  }
+
+  &__svg,
+  &__label{
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__svg{
+    height: 35px;
+    width: 35px;
+    use{
+      fill: #74b1ee;
+    }
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border-bottom: 1px solid #ebebeb;
+    width: 595px;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border-bottom: 1px solid #ebebeb;
+    width: 595px;
+  }
+
+}
+
+.sub-description{
+  width: 500px;
+
+  &__image{
+    width: 45px;
+  }
+
+  &__image-span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  &__image-block{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    box-sizing: content-box;
+    padding: 20px;
+    border-radius: 50%;
+    background: $greyBy;
+  }
+
+  &__text-block{
+    width: 400px;
+    padding: 13px 0px 0px 25px;
+  }
+
+  &__image-content{
+    height: 100%;
+    display: table;
+  }
+
+  &__image-block,
+  &__text-block{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__title{
+
+    p{
+      font-size: 20px;
+      font-weight: 400;
+      color: #659dd6;
+      margin: 0px;
+    }
+
+  }
+
+  &__description{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+    color: #666;
+  }
+
+}

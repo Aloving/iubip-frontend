@@ -1,0 +1,115 @@
+@import '../../../variables';
+
+.detail-faq{
+  display: none;
+  transition: 0.3s;
+
+  &+.callback-form{
+    margin-top: 50px;
+  }
+
+  &__list{
+    .detail-faq__item{
+      &:last-child{
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  &__first-list{
+    float: left;
+  }
+
+  &__second-list{
+    float: right;
+  }
+
+  .page-sub-header{
+    margin: 77px 0px 54px;
+  }
+
+  &:after{
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+}
+
+.faq-item{
+  width: 553px;
+  margin-bottom: 20px;
+
+  &__angle{
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 17px;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    svg{
+      width: 30px;
+      height: 30px;
+    use{
+      transition: 0.3s;
+      fill: #6f9bed;
+    }
+   }
+  }
+
+  &__header{
+    text-align: left;
+    font-weight: 400;
+    padding: 18px 24px;
+    padding-right: 50px;
+    color: #333;
+    background-color: $greyBy;
+    border-radius: 27.5px;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+
+    &_active{
+      color: #fff;
+      background: #4c7ee2;
+      background: -moz-linear-gradient(left,  #4c7ee2 0%, #5b8eeb 100%);
+      background: -webkit-linear-gradient(left,  #4c7ee2 0%,#5b8eeb 100%);
+      background: linear-gradient(to right,  #4c7ee2 0%,#5b8eeb 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c7ee2', endColorstr='#5b8eeb',GradientType=1 );
+
+      & + .faq-item__description{
+        opacity: 1;
+        padding: 35px 25px;
+        max-height: 700px;
+        transition: 0.3s;
+      }
+      .faq-item__angle{
+          transform: rotate(180deg);
+          transition: 0.3s;
+        svg{
+
+          transition: 0.3s;
+          use{
+            transition: 0.3s;
+            fill: #ebf1fd;
+          }
+
+        }
+        
+      }
+    }
+  }
+
+  &__description{
+    font-weight: 300;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    padding: 0px 25px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+}

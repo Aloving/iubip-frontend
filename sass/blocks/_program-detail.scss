@@ -1,0 +1,40 @@
+@import './common-pages/program-detail/program-detail-common';
+@import './common-pages/program-detail/program-detail';
+@import './common-pages/program-detail/teacher-info';
+@import './common-pages/program-detail/detail-faq';
+@import './common-pages/program-detail/portfolio-carousel';
+@import './common-pages/program-detail/curriculum-detail';
+
+.detail-feedback-wrapper{
+	position: relative;
+	bottom: -91px;
+	height: 795px;
+	overflow: hidden;
+	box-sizing: content-box;
+
+	.owl-nav-wrap{
+		margin-top: 50px;
+	}
+
+	.owl-carousel .owl-stage-outer{
+		padding-bottom: 0px;
+	}
+
+	.feedback{
+		background-color: #f9f9f9;
+		width: 150%;
+		padding: 40px 0px 60px;
+		position: absolute;
+		left: -25%;
+		border-radius: 55% 55% 0% 0%;
+		
+		&__slider{
+			padding-bottom: 50px;
+		}
+
+		.page-sub-header{
+			margin-bottom: 50px;
+		}
+	}
+
+}

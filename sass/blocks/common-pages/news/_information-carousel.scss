@@ -1,0 +1,102 @@
+.information-carousel{
+
+  &__main-image{
+    width: 650px;
+    height: 454px;
+    border-radius: 6px;
+  }
+
+  &__preview-image{
+    width: 151px!important;
+    height: 106px;
+    border-radius: 3px;
+  }
+
+  &__preview-block{
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  &__previews{
+    display: none;
+    margin-top: 15px;
+    height: 106px;
+    overflow: hidden;
+  }
+
+  .owl-nav{
+    position: relative;
+    top: -70px;
+  }
+
+  .owl-prev{
+    position: absolute;
+    left: 10px;
+    z-index: 10;
+
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: -10px;
+      top: -36px;
+      border-radius: 3px;
+      width: 77px;
+      height: 106px;
+      background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); 
+      background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+      background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+
+    }
+  }
+
+  .owl-next{
+    position: absolute;
+    right: 10px;
+    z-index: 10;
+
+    &:after{
+      content: '';
+      position: absolute;
+      z-index: -1;
+      left: -32px;
+      top: -36px;
+      border-radius: 3px;
+      transform: rotate(180deg);
+      width: 77px;
+      height: 106px;
+      background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); 
+      background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+      background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 );
+
+    }
+  }
+
+  .owl-nav-prev,
+  .owl-nav-next{
+    svg{
+      width: 35px;
+      height: 35px;
+
+      use{
+        fill: #fff;
+      }
+
+      &:hover{
+        use{
+          fill: #d11533;
+        }
+      }
+
+    }
+  }
+
+  .owl-nav{
+    &.disabled{
+      display: none;
+    }
+  }
+
+}

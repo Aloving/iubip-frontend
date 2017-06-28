@@ -1,0 +1,162 @@
+.header{
+  position: absolute;
+  left: calc(50% - 585px);
+  top: 0px;
+  z-index: 2;
+
+  &_light{
+    position: static;
+  }
+
+  &__login-link{
+    margin-left: 7px;
+  }
+
+  &__phones{
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &__light-version{
+    position: relative;
+    float: right;
+
+    svg{
+      margin-right: 5px;
+      width: 30px;
+      height: 30px;
+
+      use{
+        fill: #fff;
+      }
+
+    }
+
+  }
+  &__login-btn{
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 300;
+    vertical-align: middle;
+    display: inline-block;
+    border: 0px;
+    border-radius: 20px;
+    width: 100px;
+    padding: 12px;
+    padding-left: 36px;
+    position: relative;
+    outline: none;
+    background-color: #74b1ee;
+    float: left;
+
+    &_logined{
+      width: 124px;
+      text-decoration: none;
+    }
+
+    svg{
+      position: absolute;
+      left: 13px;
+      top: 5px;
+      width: 28px;
+      height: 28px;
+      use{
+        fill: #fff;
+      }
+    }
+
+    &:before{
+      content: "";
+      width: 27px;
+      height: 28px;
+      background: url(../img/default-sprite.svg) -455px -22px no-repeat;
+      background-size: 607px;
+    }
+
+  }
+
+  &__middle-block{
+    width: 608px;
+    padding: 0px 55px 0px 256px;
+  }
+
+  &__logo{
+    outline: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    a{
+      font-size: 0px;
+    }
+
+    svg{
+      width: 145px;
+      height: 86px;
+    }
+
+  }
+
+  &__logo,
+  &__middle-block,
+  &__right-block{
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+  &__right-block{
+    width: 377px;
+  }
+
+}
+
+.light-version{
+  padding: 5px 15px 4px;
+  border: 1px solid #69f;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 40px;
+  font-weight: 300;
+  line-height: 1.4;
+  text-decoration: none;
+  &__icon,
+  &__lable{
+    vertical-align: middle;
+  }
+
+}
+
+.phones{
+
+  &__phone-item{
+    position: relative;
+    svg{
+      width: 30px;
+      height: 18px;
+      top: 3px;
+      left: -36px;
+      position: absolute;
+      use{
+        fill: #69c;
+      }
+    }
+  }
+
+  &__phone-number{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+  }
+
+  &__label-phone{
+    padding-left: 9px;
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px;
+    color: #9cf;
+  }
+
+}

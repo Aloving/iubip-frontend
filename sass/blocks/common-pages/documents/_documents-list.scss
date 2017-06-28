@@ -1,0 +1,258 @@
+.documents-list{
+
+	margin-bottom: 92px;
+
+	&__content-box{
+		margin-bottom: 56px;
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+
+	.page-title-block{
+		margin: 40px 0px 40px;
+	}
+
+	&__search-label{
+		position: relative;
+
+		svg{
+			width: 20px;
+			height: 20px;
+			position: absolute;
+			right: 19px;
+			top: 15px;
+			use{
+				fill: #69c;
+			}
+		}
+
+	}
+
+	&__search-input{
+		font-size: 18px;
+		padding: 0 32px;
+		width: 100%;
+		height: 50px;
+		border-radius: 40px;
+		border: 0px;
+		background-color: #f2f2f2;
+		border: 0px;
+		outline: none;
+		&::-webkit-input-placeholder {color:#666;font-size: 18px; font-weight: 300;}
+    &::-moz-placeholder          {color:#666;font-size: 18px; font-weight: 300;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#666;font-size: 18px; font-weight: 300;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#666;font-size: 18px; font-weight: 300;}
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.1s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.1s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.1s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.1s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.1s ease;}
+
+	}
+
+}
+
+.documents-list{
+	margin-top: 59px;
+	position: relative;
+
+	&__container{
+		padding-top: 71px;
+	}
+
+	&__content-box{
+		position: relative;
+		text-align: center;
+		padding: 20px 0px 0px 0px;
+		background: #fff;
+	}
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 286px;
+    width: 100%;
+    background: url(../img/grey-back-catalog.jpg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+	&:before{
+		content: "";
+		position: absolute;
+		left: 0px;
+		top: 285px;
+		width: 100%;
+		height: 100%;
+		background: $greyBy;
+		min-height: 600px;
+	}
+
+}
+
+.documents-list-page{
+	min-height: 600px;
+
+	.page-title-block{
+		margin: 40px 0px;
+	}
+}
+
+.document-search-item{
+	padding: 40px;
+	position: relative;
+
+	&_parent{
+		padding: 40px;
+	}
+
+	&_child{
+		padding: 40px 130px;
+
+		.document-search-item__information-block{
+			width: 760px;
+		}
+
+	}
+
+	&__download-link{
+		text-decoration: none;
+	}
+
+	&__download-svg{
+		width: 34px;
+		height: 34px;
+		margin-right: 8px;
+		use{
+			fill: #669ed6;
+		}
+	}
+
+	&__download-svg,
+	&__format{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__format{
+		font-size: 12px;
+		color: #666;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__download-block,
+	&__information-block{
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	&__download-block{
+		margin-right: 24px	;
+	}
+
+	&__information-block{
+		width: 930px;
+	}
+
+	&__header{
+
+		a{
+			color: #669ed6;
+			font-size: 20px;
+			font-weight: 400;
+			text-decoration: none;
+
+			&:hover{
+				color: #ef2849;
+				strong{
+					color: #ef2849;
+				}
+			}
+
+			strong{
+				color: darken(#669ed6, 7%);
+			}
+
+		}
+
+	}
+
+	&__description{
+		padding: 26px 23px 0px 0px;
+		max-width: 1044px;
+		color: #666;
+		font-size: 14px;
+		font-weight: 300;
+		line-height: 1.6;
+	}
+
+}
+
+.documents-content-box{
+
+	&__list{
+		background-color: #fff;
+		position: relative;
+			&:after{
+			content: "";
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			line-height: 1.6;
+			width: 	100%;
+			border-bottom: 2px solid #ebebeb;
+		}
+
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+	}
+
+	&__documents-block{
+		text-align: left;
+	}
+
+	&__label-block{
+		padding: 16px 58px;
+		border-radius: 60px;
+		background-color: #5d94e7;
+		display: inline-block;
+		margin: 0 auto;
+		position: relative;
+		top: -47px;
+	}
+
+	&__label-svg{
+		width: 29px;
+		height: 25px;
+		margin-right: 20px;
+
+		use{
+			fill: #fff;
+		}
+
+	}
+
+	&__label-svg,
+	&__label-text{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	&__label-text{
+		p{
+			margin: 0;
+			color: #fff;
+			font-size: 20px;
+			font-weight: 400;
+		}
+	}
+}

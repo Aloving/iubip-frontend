@@ -1,0 +1,106 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testCommon": "watchify ./js/common.js -d -o  ../static/js/bundle.js",
+    "testSearch": "watchify ./js/search-app.js -d -o  ../static/js/search-app.js",
+    "testNews": "watchify ./js/news-list-app.js -d -o  ../static/js/news-list-app.js",
+    "newDetail": "watchify ./js/new-detail-app.js -d -o  ../static/js/new-detail-app.js ",
+    "documentsTest": "watchify ./js/documents-list-app.js -d -o  ../static/js/documents-list-app.js ",
+    "teacherTest": "watchify ./js/teacher-detail-app.js -d -o  ../static/js/teacher-detail-app.js",
+    "registerTest": "watchify ./js/register-app.js -d -o  ../static/js/register-app.js ",
+    "catalogTest": "watchify ./js/catalog-app.js -d -o  ../static/js/catalog-app.js",
+    "indexTest": "watchify ./js/index-app.js -d -o  ../static/js/index-app.js",
+    "testMap": "watchify ./js/map-app.js -d -o  ../static/js/map-app.js",
+    "testTeacherList": "watchify ./js/teacher-list-app.js -d -o  ../static/js/teacher-list-app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "browserify": "^13.1.1",
+    "browserify-shim": "^3.8.12",
+    "del": "^2.2.2",
+    "emit": "0.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-if": "^2.0.2",
+    "gulp-jsbeautifier": "^2.0.4",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.9.1",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.11",
+    "handlebars": "^4.0.6",
+    "hbsfy": "^2.7.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.8.0"
+  },
+  "browser": {
+    "jquery": "./js/dependecies/jquery.min.js",
+    "owl-carousel": "./js/dependecies/owl.carousel.min.js",
+    "jquery.autocomplete": "./js/dependecies/jquery.autocomplete.js",
+    "jquery.cookie": "./js/dependecies/jquery.cookie.js",
+    "jquery.fancybox": "./js/dependecies/jquery.fancybox.js",
+    "jquery.validate": "./js/dependecies/jquery.validate.min.js",
+    "chosen": "./js/dependecies/chosen.jquery.js",
+    "tooltipster": "./js/dependecies/tooltipster.bundle.js",
+    "moment": "./js/dependecies/moment.js"
+  },
+  "browserify-shim": {
+    "jquery": "$",
+    "moment": "moment",
+    "handlebars": "handlebars",
+    "tooltipster": {
+      "exports": "tooltipster",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "chosen": {
+      "exports": "chosen",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "owl-carousel": {
+      "exports": "owlCarousel",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "jquery.autocomplete": {
+      "exports": "autocomplete",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "jquery.cookie": {
+      "exports": "cookie",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "jquery.fancybox": {
+      "exports": "fancybox",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    },
+    "jquery.validate": {
+      "exports": "validate",
+      "depends": [
+        "jquery:jQuery"
+      ]
+    }
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "hbsfy"
+    ]
+  }
+}

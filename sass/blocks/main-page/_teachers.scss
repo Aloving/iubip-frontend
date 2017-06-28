@@ -1,0 +1,108 @@
+@import '../../variables';
+
+.teachers{
+  position: relative;
+  padding-top: 24px;
+  &__teacher-list{
+    list-style: none;
+    text-align: center;
+    font-size: 0px;
+    padding: 0px;
+    margin: 0 auto;
+    margin-top: 68px;
+    width: 100%;
+    @include clearfix();
+  }
+  &__redirect-button-block{
+    z-index: 10;
+    position: relative;
+    bottom: -10px;
+    text-align: center;
+  }
+}
+.teacher{
+  height: 300px;
+  width: 300px;
+  margin: 0px 50px 19px 30px;
+  vertical-align: top;
+  float:left;
+  text-align: center;
+  position: relative;
+
+  &:nth-child(3n){
+    margin-right: 0px;
+  }
+  
+  &__link-block{
+    display: inline-block;
+    text-decoration: none;
+    &:hover{
+
+      .teacher__name{
+        color: #ef2845;
+      }
+
+      &+ .teacher__information-block .teacher__name{
+        color: #ef2845;
+      }
+
+    }
+  }
+
+
+
+  @include clearfix();
+
+  &__name{
+    &-link{
+      margin-top: 40px;
+    }
+    display: block;
+    color: #75a4d8;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__degrees{
+    display: block;
+  }
+
+  &__desc{
+    max-height: 68px;
+    overflow: hidden;
+    display: block;
+    color: #999;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.3;
+  }
+
+  &__link{
+    color: #69c;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 9px;
+    &:hover{
+      color: #c03;
+    }
+  }
+
+  &__information-block{
+    margin-top: 26px;
+    overflow: hidden;
+    display: block;
+  }
+
+  &__image-block{
+    display: inline-block;
+    vertical-align: middle;
+    width: 160px;
+  }
+
+  &__image{
+    border-radius: 50%;
+    width: 100%;
+  }
+
+}

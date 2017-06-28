@@ -1,0 +1,32 @@
+.educations-filters{
+text-align: center;
+  &__container{
+    display: inline-block;
+    text-align: center;
+    font-size: 0px;
+    border-radius: 40px;
+    border: 2px solid #e5e5e5;
+    background: #fff;
+  }
+  
+    &__filter{
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 23px;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 400;
+    color: #69c;
+    &:hover{
+      color: #ef2849;
+    }
+    &_active{
+      background: #c03;
+      color: #fff;
+      &:hover{
+        color: #fff!important;
+      }
+    }
+
+  }
+}

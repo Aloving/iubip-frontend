@@ -1,0 +1,115 @@
+.teacher-detail-list{
+	@include clearfix();
+	position: relative;
+	padding: 93px 0px 50px;
+	bottom: -62px;
+	overflow: hidden;
+	&:before{
+		content: '';
+    background-color: $greyBy;
+    position: absolute;
+    height: 100%;
+    top: 0px;
+    width: 150%;
+    border-radius: 50% 50% 0 0;
+    left: -25%;
+    z-index: -1;
+	}
+
+}
+
+.teacher-gallery{
+
+	min-height: 450px;
+
+	.teacher{
+		margin: 0;
+		margin-left: 35px;
+	}
+
+	.owl-item{
+		text-align: center;
+    display: inline-block;
+  }
+
+  .owl-dots{
+    padding-top: 5px;
+  }
+
+  .owl-stage-outer{
+  	margin-bottom: 12px;
+  }
+
+  .owl-item{
+    display: inline-block;
+    vertical-align: bottom;
+    float: none;
+  }
+
+  .owl-carousel-navigation{
+    display: inline-block;
+    position: relative;
+  }
+
+  .owl-prev,
+  .owl-next{
+    position: absolute;
+    top: 0px;
+  }
+
+  .owl-prev{
+    left: -62px;
+  }
+  .owl-nav-prev svg,
+  .owl-nav-next svg{
+    width: 35px;
+    height: 35px;
+
+    use{
+      fill: #c4c4c4;
+    }
+
+    &:hover{
+      use{
+        fill: #d11533;
+      }
+    }
+
+  }
+  .owl-next{
+    right: -62px;
+  }
+  .owl-dot{
+    width: 6px;
+    height: 6px;
+    background: #000;
+    display: inline-block;
+    margin-right: 24px;
+    border-radius: 50%;
+    background: #669ed6;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+
+    &.active{
+      background: #c03;
+    }
+
+  }
+
+  .owl-nav-wrap{
+    text-align: center;
+  }
+
+  .owl-item .feedback-slider__description p{
+    display: block;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+  }
+
+  .owl-item .feedback-slider__description{
+    transition: box-shadow 0.5s ;
+  }
+}

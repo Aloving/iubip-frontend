@@ -1,0 +1,91 @@
+.teacher-info{
+  font-size: 0px;
+  &__assessment-label{
+    font-size: 13px;
+    font-weight: 300;
+    color: #999;
+  }
+
+  &__link{
+    display: table-cell;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  &__image-block,
+  &__information{
+    vertical-align: top;
+    display: table-cell
+  }
+
+  &__assessment{
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+  }
+
+  &__image-block{
+    padding-right: 20px;
+    font-size: 0px;
+    img{
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+  }
+
+  &__degrees{
+    margin-bottom: 3px;
+    display: block;
+  }
+
+  &__information{
+    margin-left: 14px;
+    width: 100%;
+    padding-right: 30px;
+    max-width: 278px;
+  }
+  &__FIO{
+    line-height: 1.2;
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  &__post{
+    font-size: 12px;
+    font-weight: 300;
+    color: #999;
+  }
+  &__stars-rating{
+    padding-top: 15px;
+    text-align: right;
+    font-size: 0px;
+  }
+  &__star{
+    vertical-align: middle;
+    display: inline-block;
+    svg{
+      height: 15px;
+      width: 15px;
+      use{
+        fill: #e8e8e8;
+      }
+    }
+    &_active{
+      svg{
+        use{
+          fill: #ffb767;
+        }
+      }
+    }
+  }
+  &__total-rating{
+    padding-left: 15px;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 18px;
+    color: #333333;
+  }
+}

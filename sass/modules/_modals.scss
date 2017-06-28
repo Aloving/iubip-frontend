@@ -1,0 +1,121 @@
+//Common styles
+.modal{
+  max-width: 100%;
+  overflow: hidden;
+  &__container{
+    text-align: center;
+    border-radius: 10px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2357b5+0,5e91ed+100 */
+    background: rgb(35,87,181); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgb(35,87,181) 0%, rgb(94,145,237) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgb(35,87,181) 0%,rgb(94,145,237) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgb(35,87,181) 0%,rgb(94,145,237) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2357b5', endColorstr='#5e91ed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    min-width: 455px;
+    padding: 42px 40px 40px;
+  }
+  &__header{
+    font-size: 35px;
+    padding-bottom: 31px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  &__input-block{
+    position: relative;
+    margin-bottom: 36px;
+    label.error{
+      position: absolute;
+      left: 48px;
+      color: #fff;
+      font-size: 14px;
+      bottom: -20px;
+    }
+  }
+  &__input{
+    width: 320px;
+    padding: 15px 23px;
+    color: #2d5986;
+    outline: none;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    &::-webkit-input-placeholder {color:#69c;}
+    &::-moz-placeholder          {color:#69c;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#69c;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#69c;}
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.1s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.1s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.1s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.1s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.1s ease;}
+
+    &.error{
+      border: 2px solid #e81248;
+    }
+  }
+  &__submit{
+    width: 193px;
+    padding: 14px 0px 12px;
+    margin-bottom: 20px;
+  }
+}
+.fancybox-overlay{
+  background: rgba(#4e4fac, 0.9);
+}
+.fancybox-close{
+  top: -30px;
+  right: -33px;
+}
+.fancy-custom{
+  .fancybox-skin{
+      border-radius: 10px;
+      background:none;
+  }
+}
+
+
+.fancybox-inner{
+  overflow: hidden;
+}
+
+.login-modal{
+  &__forgot-link{
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+//callback styles
+.callback-modal{
+  &__form{
+    .modal__submit{
+      margin-bottom: 0px;
+    }
+  }
+  &__submit{
+    width: 210px;
+  }
+}
+.ajax-modal{
+  &__header{
+    padding: 0px;
+    margin: 0px;
+    font-weight: 300;
+    font-size: 29px;
+    color: #fff;
+  }
+}
+
+.detail-form-modal{
+  .modal{
+    &__container{
+      min-width: 510px;
+      .modal__input-block label.error{
+        left: 76px;
+      }
+    }
+  }
+}

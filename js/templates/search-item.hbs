@@ -1,0 +1,16 @@
+<div class="search-container__item search-item js-search-item">
+
+  <div class="search-item__numb-block">
+    <span class="search-item__numb js-search-numb">{{itemCounter}}</span>
+  </div>
+
+  <div class="search-item__information-block">
+    <div class="search-item__header search-item__{{type}}">
+      <a href="{{url}}">{{{name}}}</a>
+    </div>
+      {{#if desc}}
+       <div class="search-item__description">{{{desc}}}</div>
+      {{/if}}
+  </div>
+  
+</div>

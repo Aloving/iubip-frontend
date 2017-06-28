@@ -1,0 +1,168 @@
+.callback-form{
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+
+  &__container{
+    height: 479px;
+    width: 150%;
+    overflow: hidden;
+    position: relative;
+    left: -25%;
+    background: rgb(29,38,160);
+    background: -moz-linear-gradient(-45deg,  rgb(29,38,160) 0%, rgb(81,110,203) 100%);
+    background: -webkit-linear-gradient(-45deg,  rgb(29,38,160) 0%,rgb(81,110,203) 100%);
+    background: linear-gradient(135deg,  rgb(29,38,160) 0%,rgb(81,110,203) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d26a0', endColorstr='#516ecb',GradientType=1 );
+    border-radius: 50%;
+  }
+
+  &__image-block{
+    img{
+      opacity: 0.22;
+      position: absolute;
+      width: 100%;
+      left: 16%;
+    }
+  }
+  &__input-block{
+    position: relative;
+    display: inline-block;
+    margin-right: 25px;
+    &:last-child{
+      margin-right: 0px;
+    }
+    label.error{
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      left: 20px;
+      bottom: -25px;
+    }
+  }
+  &__select-block{
+    .chosen-container-single .chosen-search input[type="text"]{
+      border: 1px solid #a0a0a0;
+      padding: 10px 20px 10px 5px;
+    }
+    .chosen-container-active.chosen-with-drop .chosen-single{
+      border: 0px;
+    }
+    .chosen-drop{
+      border: 0px;
+    }
+    .chosen-container .chosen-results li{
+      padding: 14px 21px 14px;
+    }
+    .chosen-single{
+      padding: 0;
+      span{
+        margin: 0;
+        padding: 14px 21px 14px;
+      }
+      background: #fff;
+      border-radius: 24px;
+      height: 100%;
+      width: 320px;
+      font-size: 18px;
+      border: 0px;
+      color:#69c;
+    }
+  }
+  &__callback-input{
+    width: 320px;
+    padding: 13px 21px 13px;
+    border-radius: 24px;
+    font-weight: 300;
+    font-size: 18px;
+    border: 2px solid #fff;
+    color: darken(#69c, 25%);
+    outline: none;
+    &::-webkit-input-placeholder {color:#69c;}
+    &::-moz-placeholder          {color:#69c;}/* Firefox 19+ */
+    &:-moz-placeholder           {color:#69c;}/* Firefox 18- */
+    &:-ms-input-placeholder      {color:#69c;}
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.1s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.1s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.1s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.1s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.1s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.1s ease;}
+
+    &.error{
+      border: 2px solid #e81248;
+    }
+  }
+  &__inputs{
+    display: table-row;
+    vertical-align: middle;
+  }
+  &__labels{
+    padding-bottom: 27px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__callback-form__submit-block{
+    padding-top:43px;
+  }
+  &__first-label{
+    padding-bottom: 10px;
+    display: block;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__second-label{
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+  }
+  &__form-block{
+    position: absolute;
+    top: 83px;
+    display: table;
+    height: 370px;
+    left: calc(50% - (1140px/2));
+    width: 1140px;
+    z-index: 3;
+    text-align: center;
+  }
+}
+
+.autocomplete-suggestions{
+  overflow: hidden;
+  max-height: 320px!important;
+  .autocomplete-suggestion{
+    cursor: pointer;
+    border-top: 1px solid rgba(102, 153, 204, 0.17);
+    padding: 12px 21px 12px;
+    background: #fff;
+    transition: 0.1s;
+    color: #69c;
+    font-size: 16px;
+    line-height: 1.4;
+    strong{
+      color: darken(#69c, 30%);
+      font-weight: 400;
+    }
+    &:hover{
+      background: lighten(#69c, 34%);
+    }
+    &:first-child{
+            border-top: 1px solid rgba(102, 153, 204, 0.17);
+    }
+    &:last-child{
+      border-radius: 0px 0px 24px 24px;
+    }
+  }
+}
+
+.autocmplete-wrapper{
+  max-height: 320px;
+  overflow-y: scroll;
+  width: 337px;
+}

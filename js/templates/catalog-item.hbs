@@ -1,0 +1,23 @@
+  <div class="educations__item educations-item rec-slide">
+
+    <div class="rec-slide__img-block">
+      <a href="{{ url }}" class="rec-slide__block-link">
+        <img src="{{ image }}" class="rec-slide__img" alt="">
+      </a>
+    </div>
+
+    <div class="rec-slide__content-block">
+      <div class="rec-slide__text-block">
+        <div class="rec-slide__title">
+          <a href="{{ url }}" class="rec-slide__block-link {{#if trancTitle}} js-title-link {{/if}}" {{#if trancTitle}} title="{{title}}" {{/if}}>
+            <p class="cap-first rec-slide__course-name"> {{#if trancTitle}} {{trancTitle}} {{ else }} {{title}} {{/if}}</p>
+          </a>
+        </div>
+        <div class="rec-slide__description">
+          <p>{{ desc }}</p>
+        </div>
+      </div>
+        <a href="{{ url }}" class="rec-slide__link">Подробнее</a>
+    </div>
+
+  </div>

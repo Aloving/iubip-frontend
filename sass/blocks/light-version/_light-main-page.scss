@@ -1,0 +1,149 @@
+body.lightVersion{
+
+  .light-slider{
+    display: block;
+  }
+
+  .banner{
+    display: none;
+  }
+
+  .promos{
+		display: none;
+	}
+
+  .recommendations{
+    display: none;
+  }
+
+  .slider-container{
+    display: none;
+  }
+
+  .teachers{
+    display: none;
+  }
+
+  .feedback{
+    display: none;
+  }
+
+  .our-ways{
+		background-color: #fff;
+		padding-top: 86px;
+
+		&__light-block{
+			display: block;
+		}
+
+		&:before,
+		&:after{
+			display: none;
+		}
+
+		&__popular-label{
+			display: none;
+		}
+
+		&__first-list{
+			display: block;
+			margin-bottom: 49px;
+		}
+
+		&__second-list{
+			display: none;
+		}
+
+		&__submit-block{
+			display: none;
+		}
+
+		&__item{
+			margin-right: 20px;
+			margin-top:23px;
+
+			&:nth-child(-n+4){
+				margin-top: 0px;
+			}
+
+			&:nth-child(4n){
+				margin-right: 0px;
+			}
+
+		}
+
+	}
+
+  .our-ways-wrapper{
+    padding-bottom: 108px;
+
+    &:before,
+    &:after{
+      display: none;
+    }
+
+  }
+
+  .way-item{
+    padding: 0;
+    margin-bottom: 0px;
+
+    &__link{
+      border-radius: 0;
+      background: none;
+      height: 130px;
+      width: 265px;
+      text-decoration: none;
+
+      &:hover{
+        background-color: none;
+      }
+
+    }
+
+    &__image-block{
+      display: none;
+    }
+
+    &__title{
+      position: static;
+      display: table-cell;
+      vertical-align: middle;
+      height: inherit;
+      padding: 0px 20px;
+      text-align: left;
+    }
+
+  }
+
+  .header{
+    position: static;
+
+    &__login-btn{
+      padding: 11px;
+      width: 107px;
+      border-radius: 26px;
+      font-weight: 400;
+      margin-right: 10px;
+
+      svg{
+        display: none;
+      }
+
+    }
+
+    &__logo{
+      padding: 36px 0px 37px;
+      svg{
+        width: 165px;
+        height: 94px;
+      }
+    }
+
+    &__middle-block{
+      padding: 0px 55px 0px 119px;
+    }
+    
+  }
+
+}

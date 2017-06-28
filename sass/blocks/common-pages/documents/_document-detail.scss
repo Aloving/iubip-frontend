@@ -1,0 +1,20 @@
+.document-detail{
+
+	margin-bottom: 150px;
+
+	&__document{
+		text-align: center;
+	}
+
+	.page-title-block{
+		margin: 40px 0px 40px;
+		h2{
+			font-size: 40px;
+			font-weight: 400;
+			color: #333;
+			margin: 0;
+		}
+
+	}
+
+}

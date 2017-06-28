@@ -1,0 +1,108 @@
+.educations{
+  padding-bottom: 130px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  bottom: -62px;
+
+  &__hidden-list{
+    display: none;
+  }
+
+  &__spin-block{
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+    background: rgba(255,255,255, 0.8);
+    display: none;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__spin{
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  &__filters-block{
+    margin-top: 54px;
+  }
+
+  &__list{
+    min-height: 350px;
+    font-size: 0px;
+    margin-top: 52px;
+  }
+
+
+  .block-header{
+    margin-bottom: 40px;
+  }
+
+  &:after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 286px;
+    width: 100%;
+    background: url(../img/grey-back-catalog.jpg) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: 200px;
+    height: 100%;
+    width: 100%;
+    background-color: $greyBy;
+  }
+
+}
+.educations-item{
+  position: relative;
+  bottom: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: bottom 0.5s;
+  &:hover{
+    bottom: 10px;
+
+  }
+  &:nth-child(4n){
+    margin-right: 0px;
+  }
+}
+
+.education-light{
+  display: none;
+  padding-bottom: 100px;
+
+  .block-header{
+    margin-top: 50px;
+  }
+
+  &__list{
+    font-size: 0px;
+    margin-top: 52px;
+  }
+
+  &__slide{
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 25px;
+
+    &:nht-child(-n+4){
+      margin-top: 0px;
+    }
+
+    &:nth-child(4n){
+      margin-right: 0px;
+    }
+
+  }
+
+}

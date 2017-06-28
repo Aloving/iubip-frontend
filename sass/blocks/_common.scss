@@ -1,0 +1,163 @@
+@import './common-pages/common-header';
+
+.page-title-block{
+  text-align: center;
+  h1{
+    margin: 0px;
+    font-size: 40px;
+    color: #333;
+    font-weight: 400;
+    &:first-letter{
+      text-transform: uppercase;
+    }
+  }
+}
+
+.profile-input-block{
+    text-align: center;
+}
+
+.page-block-header{
+  text-align: center;
+  margin: 30px 0px;
+  p{
+    font-size: 24px;
+    margin: 0px;
+  }
+
+  &_error{
+    color: red;
+  }
+}
+
+.fancybox-nav{
+    span{
+      visibility: visible!important;
+    }
+  }
+
+.ajax-block-screen{
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 7070;
+}
+
+.page-sub-header{
+  text-align: center;
+  h2{
+    margin: 0px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #333;
+    text-transform: lowercase;
+    &:first-letter{
+      text-transform: uppercase;
+    }
+  }
+
+  &_portfolio{
+    margin: 112px 0px 48px;
+  }
+
+  &_descriptions{
+    margin: 56px 0px 52px;
+  }
+
+}
+
+.block-header{
+  margin: 0px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  color: #333;
+  &:first-letter{
+    text-transform: uppercase;
+  }
+}
+
+.submit-button{
+  display: inline-block;
+  cursor: pointer;
+  width: 280px;
+  text-decoration: none;
+  border: 0px;
+  padding: 18px 0px 18px;
+  outline: none;
+  font-size: 20px;
+  font-weight: 300;
+  border-radius: 60px;
+  color: #fff;
+  background-color: #d11533;
+  transition: 0.3s;
+  &:disabled{
+    background-color: #adadad;
+    &:hover{
+      background-color: #adadad;
+    }
+  }
+  &:hover{
+    background: #e81248;
+  }
+}
+
+.cap-first:first-letter{
+  text-transform: uppercase;
+}
+
+.not-found-page{
+  text-align: center;
+  min-height: 600px;
+  
+  &+.callback-form{
+    display: none;
+    &+.footer{
+      height: 344px;
+      .footer__container{
+        top: 100px;
+      }
+    }
+  }
+  
+  
+  &__forty{
+    position: absolute;
+    left: calc(50% - -52px);  
+    color: #e2e2e2;
+    margin: 0;
+    font-size: 180px;
+  }
+  
+  &__label{
+    position: relative;
+    font-size: 60px;
+    color: #69c;
+  }
+  
+  &__background{
+    padding-top: 175px;
+    @iclude clearfix();
+  }
+}
+
+.spin-block{
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+  background: rgba(255,255,255, 0.8);
+  display: none;
+  position: relative;
+  z-index: 10;
+
+  &__spin{
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+}
+  

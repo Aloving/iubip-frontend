@@ -1,0 +1,23 @@
+body.lightVersion{
+
+		.document-search-item{
+		&__header{
+			& a{
+				color: #000;
+				font-weight: 400;
+
+				& strong{
+					color: #000;
+					font-weight: 400;
+				}
+
+			}
+		}
+
+		&__description{
+			font-weight: 400;
+		}
+
+	}
+	
+}

@@ -1,0 +1,17 @@
+body.lightVersion{
+	.teacher-detail{
+
+		&__image-block{
+			img{
+				@include grayscale();
+			}
+		}
+
+		&__label{
+			font-weight: 400;
+		}
+
+	}
+
+
+}
