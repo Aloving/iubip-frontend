@@ -1,2 +1,2 @@
 # iubip-frontend
-[request](http://iubip-dpo.ru/)
+[link](http://iubip-dpo.ru/)
